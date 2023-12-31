@@ -165,13 +165,13 @@ animation: floaty 1s infinite;
 }
 
 @keyframes floaty {
-0% {
-    transform:translate(0,0);
-}
+    0% {
+        transform:translate(0,0);
+    }
 
-50% {
-    transform:translate(0, 12px);
-}
+    50% {
+        transform:translate(0, 12px);
+    }
 }
 
 /* bottom, left, and right sides */
@@ -216,4 +216,46 @@ width: 0;
     border-radius: 8px;
     z-index: 9999;
     transition: transform 0.5s ease-in-out;
+}
+
+#left-image, #right-image {
+    position: fixed;
+    top: 50%;
+    background-size: cover;
+    transition: opacity 1s ease-in-out;
+}
+
+#left-image {
+    width: 280px;
+    height: 180px;
+    left: 0;
+    background-image: url('img/finics.png');
+}
+
+#right-image {
+    right: 0;
+    width: 250px;
+    height: 200px;
+    background-image: url('img/clara-luciani-close-up.png');
+}
+
+.hidden-image {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#bottom-image {
+    background-image: url('img/otis.JPG');
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 300px;
+    background-size: cover;
+    transition: bottom 1s ease-in-out;
+}
+
+#bottom-image.visible {
+    bottom: 20px;
 }
