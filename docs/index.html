@@ -6,19 +6,55 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div>
+    <div id="banner" class="hidden">
+        <p>La carta estará disponible a partir de las 00:00 horas.</p>
+    </div>
+    <div id="audio-container">
+        <h1>Abrir en el ordenador, please</h1>
+        <h2>Haz clic en la carta cuando sean las 00:00! :)</h2>
+        <audio controls autoplay id="miAudio">
+            <source src="audio/Slowdive - Crazy for You.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <div id="main-envelope" style="cursor: not-allowed;" onclick="openEnvelope">
         <div class="wing right"></div>
         <div class="wing left"></div>
-        <div id="main-envelope">
             <div class="heart"></div>
             <div id="envelope">
                 <div class="top"></div>
                 <div class="sides"></div>
             </div>
-        </div>
         <div id="message" class="hidden">
             <div class="message-content">
-                <p>Holaaaa</p>
+                <p>Recuerdas la canción? Cuando comenzamos a hablar y sobretodo en pandemia que es cuando nos
+                conocimos más, tenía la sensación de que esta canción representaba muy bien lo que estaba
+                sintiendo y es por eso que te la <strong>"dediqué"</strong>, pues para mí es nuestra canción.
+                <br>
+                <p>Si tuviera que elegir algún momento de mi vida al que me gustaría regresar en el tiempo (hacia atrás)
+                elegiría la primera videollamada que tuvimos. Te acuerdas que solo te reías? Y me hacíaas reir a mí 
+                también (de hecho subí una historia de eso, creo que le puse "tutorial de como reir", o algo así),
+                pues ese momento es uno de los que me gustaría volver a vivir y tener esa primera impresión de 
+                verte detrás de la pantalla.</p>
+                No quiero hacer larga la "carta", lo primero, me gustaría saber si estás bien, espero que sí.
+                Han pasado ya varias semanas, quizás meses <strong>(2?)</strong> y me hubiera gustado preguntártelo
+                cada día, ya sabes como soy.
+                <br>
+                Mi cabeza siempre siempre está pensando, y hay ciertas palabras o pensamientos que a veces no puedo
+                o se me olvidan, o me cuestan expresarlas en su momento, no sé por qué. Me gustaría decirte cosas que
+                en su momento tal vez no te las dije, y siento que me quedo corto luego que pasan
+                los días pensando en ese momento.
+                <br>
+                <p>Eres una persona increíble, y no aceptaré un no como respuesta, ni si quiera lo intentes,
+                    para mi eres alguien con quien puedo conectar de una forma con la que ninguna otra puedo hacerlo
+                    (exceptuando familia, claro), y es maravilloso encontrar personas así. Se siente bien, no sé,
+                    hasta los silencios se pueden disfrutar.</p>
+                <strong>Dame la oportunidad de poder comenzar de cero contigo, de volver a hacer las cosas bien.
+                    De hacer las cosas poco a poco, sin prisas, a nuestro ritmo.</strong>
+                    Eres mi persona favorita en el planeta y en la luna también. Nuestro iglú nos espera.
+                    <br>
+                    <br>
+                    <strong>Te quiere, Jaime</strong>
+                </p>
             </div>
         </div>
 
