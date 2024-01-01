@@ -16,7 +16,7 @@ function openEnvelope() {
 
     let now = new Date();
     const limitTime = new Date();
-    limitTime.setHours(7, 0, 0);
+    limitTime.setHours(0, 0, 0);
 
     if (now >= limitTime){
         document.getElementById('main-envelope').style.cursor = 'pointer';
