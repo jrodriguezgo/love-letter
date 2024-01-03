@@ -5,7 +5,7 @@ body {
 
 #audio-container {
     position: fixed;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -163,7 +163,7 @@ transform-origin :100% 100%;
 
 #envelope {
 background: white; 
-margin: 200px auto;
+margin: 50px auto;
 height: 200px;
 position: relative;
 width: 320px;
