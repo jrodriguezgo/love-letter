@@ -14,11 +14,6 @@ function openEnvelope() {
     const rightImage = document.getElementById('right-image');
     const bottomImage = document.getElementById('bottom-image');
 
-    let now = new Date();
-    const limitTime = new Date();
-    limitTime.setHours(7, 0, 0);
-
-    if (now >= limitTime){
         document.getElementById('main-envelope').style.cursor = 'pointer';
 
         envelope.addEventListener('click', function () {
@@ -45,5 +40,4 @@ function openEnvelope() {
                 bottomImage.classList.add('hidden-image')
             }
         });
-    }
 }
